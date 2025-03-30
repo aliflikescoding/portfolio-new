@@ -2,14 +2,26 @@
 
 @import "tailwindcss";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@theme {
+  --color-primary: #3399FF;
+  --color-primary-button-shade: #288aec;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
 }
 
 .custom-shadow {
